@@ -1,0 +1,10 @@
+D:\Project\VS2013\CS\DBCAnalysis\Test\bin\Debug\Test.exe.config
+D:\Project\VS2013\CS\DBCAnalysis\Test\bin\Debug\Test.exe
+D:\Project\VS2013\CS\DBCAnalysis\Test\bin\Debug\Test.pdb
+D:\Project\VS2013\CS\DBCAnalysis\Test\bin\Debug\DBCAnalysis.dll
+D:\Project\VS2013\CS\DBCAnalysis\Test\bin\Debug\DBCAnalysis.pdb
+D:\Project\VS2013\CS\DBCAnalysis\Test\obj\Debug\Test.csprojAssemblyReference.cache
+D:\Project\VS2013\CS\DBCAnalysis\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+D:\Project\VS2013\CS\DBCAnalysis\Test\obj\Debug\Test.csproj.CopyComplete
+D:\Project\VS2013\CS\DBCAnalysis\Test\obj\Debug\Test.exe
+D:\Project\VS2013\CS\DBCAnalysis\Test\obj\Debug\Test.pdb

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{89AB3E1F-E20C-4B89-90A0-8294823952BE}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Test</RootNamespace>
+    <AssemblyName>Test</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CoreTest\DbcAnalysisMachineManage\DbcAnalysisMachinePoolTest.cs" />
+    <Compile Include="BaseTest.cs" />
+    <Compile Include="DbcAnalysisTest\DbcAnalysisOperationTest.cs" />
+    <Compile Include="DbcAnalysisTest\DbcFileAnalysisTest.cs" />
+    <Compile Include="DbcAnalysisTest\KeyWordAnalysisMachine\BitTimingDefinitionTest\BitTimingAnalysisMachineTest.cs" />
+    <Compile Include="DbcAnalysisTest\KeyWordAnalysisMachine\CommentDefinitions\CommentAnalysisMachineTest.cs" />
+    <Compile Include="DbcAnalysisTest\KeyWordAnalysisMachine\EnvironmentVariableDefinitions\EnvironmentVariableAnalysisMachineTest.cs" />
+    <Compile Include="DbcAnalysisTest\KeyWordAnalysisMachine\EnvironmentVariableDefinitions\EnvironmentVariableDataAnalysisMachineTest.cs" />
+    <Compile Include="DbcAnalysisTest\KeyWordAnalysisMachine\EnvironmentVariableDefinitions\ValueDescriptionsForEnvVarAnalysisMachineTest.cs" />
+    <Compile Include="DbcAnalysisTest\KeyWordAnalysisMachine\MessageDefinitions\MessageTransmitterAnalysisMachineTest.cs" />
+    <Compile Include="DbcAnalysisTest\KeyWordAnalysisMachine\MessageDefinitions\SignalAnalysisMachineTest.cs" />
+    <Compile Include="DbcAnalysisTest\KeyWordAnalysisMachine\MessageDefinitions\SignalExtendedValueTypeListAnalysisMachineTest.cs" />
+    <Compile Include="DbcAnalysisTest\KeyWordAnalysisMachine\MessageDefinitions\ValueDescriptionsForSignalAanlysisMachineTest.cs" />
+    <Compile Include="DbcAnalysisTest\KeyWordAnalysisMachine\NodeDefinitions\NodeAnalysisMachineTest.cs" />
+    <Compile Include="DbcAnalysisTest\KeyWordAnalysisMachine\SignalTypeAndSignalGroupDefinitions\SignalGroupsAnalysisMachineTest.cs" />
+    <Compile Include="DbcAnalysisTest\KeyWordAnalysisMachine\SignalTypeAndSignalGroupDefinitions\SignalTypeAnalysisMachineTest.cs" />
+    <Compile Include="DbcAnalysisTest\KeyWordAnalysisMachine\SignalTypeAndSignalGroupDefinitions\SignalTypeRefAnalysisMachineTest.cs" />
+    <Compile Include="DbcAnalysisTest\KeyWordAnalysisMachine\UserDefinedAttributeDefinitions\AttributeDefaultAnalysisMachineTest.cs" />
+    <Compile Include="DbcAnalysisTest\KeyWordAnalysisMachine\UserDefinedAttributeDefinitions\AttributeDefinitionAnalysisMachineTest.cs" />
+    <Compile Include="DbcAnalysisTest\KeyWordAnalysisMachine\UserDefinedAttributeDefinitions\AttributeValueForObjectAnalysisMachineTest.cs" />
+    <Compile Include="DbcAnalysisTest\KeyWordAnalysisMachine\ValueTableDefinitions\ValueTableAnalysisMachineTest.cs" />
+    <Compile Include="ITest.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DBCAnalysis\DBCAnalysis.csproj">
+      <Project>{7b85ed29-9f03-48ad-be15-fe7b1224776b}</Project>
+      <Name>DBCAnalysis</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

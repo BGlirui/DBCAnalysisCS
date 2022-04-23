@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1622
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBCAnalysis", "DBCAnalysis\DBCAnalysis.csproj", "{7B85ED29-9F03-48AD-BE15-FE7B1224776B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{89AB3E1F-E20C-4B89-90A0-8294823952BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B85ED29-9F03-48AD-BE15-FE7B1224776B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B85ED29-9F03-48AD-BE15-FE7B1224776B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B85ED29-9F03-48AD-BE15-FE7B1224776B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B85ED29-9F03-48AD-BE15-FE7B1224776B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89AB3E1F-E20C-4B89-90A0-8294823952BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89AB3E1F-E20C-4B89-90A0-8294823952BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89AB3E1F-E20C-4B89-90A0-8294823952BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89AB3E1F-E20C-4B89-90A0-8294823952BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4ACD8BA2-C29C-43C9-94BE-92251B4A70F6}
+	EndGlobalSection
+EndGlobal

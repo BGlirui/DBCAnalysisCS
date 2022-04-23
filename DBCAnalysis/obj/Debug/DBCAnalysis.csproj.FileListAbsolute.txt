@@ -1,0 +1,6 @@
+D:\Project\VS2013\CS\DBCAnalysis\DBCAnalysis\obj\Debug\DBCAnalysis.csprojAssemblyReference.cache
+D:\Project\VS2013\CS\DBCAnalysis\DBCAnalysis\obj\Debug\DBCAnalysis.csproj.CoreCompileInputs.cache
+D:\Project\VS2013\CS\DBCAnalysis\DBCAnalysis\bin\Debug\DBCAnalysis.dll
+D:\Project\VS2013\CS\DBCAnalysis\DBCAnalysis\bin\Debug\DBCAnalysis.pdb
+D:\Project\VS2013\CS\DBCAnalysis\DBCAnalysis\obj\Debug\DBCAnalysis.dll
+D:\Project\VS2013\CS\DBCAnalysis\DBCAnalysis\obj\Debug\DBCAnalysis.pdb

@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7B85ED29-9F03-48AD-BE15-FE7B1224776B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DBCAnalysis</RootNamespace>
+    <AssemblyName>DBCAnalysis</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommunicationHandle\CommunicationDataManage.cs" />
+    <Compile Include="CommunicationHandle\DataPool.cs" />
+    <Compile Include="CommunicationHandle\MessageAnalysis.cs" />
+    <Compile Include="Core\BeanManage\BeanOpe.cs" />
+    <Compile Include="Core\BeanManage\BeanPool.cs" />
+    <Compile Include="DbcAnalysis\DbcAnalysisMachinePoolOpe.cs" />
+    <Compile Include="DbcAnalysis\DbcAnalysisOperation.cs" />
+    <Compile Include="DbcAnalysis\IDbcAnalysis.cs" />
+    <Compile Include="DbcAnalysis\KeyWordAnalysisMachine\AnalysisMachine.cs" />
+    <Compile Include="DbcAnalysis\KeyWordAnalysisMachine\INullKeyWordAnalysis.cs" />
+    <Compile Include="DbcAnalysis\KeyWordAnalysisMachine\NullKeyWordAnalysisMachine.cs" />
+    <Compile Include="DbcAnalysis\KeyWordAnalysisMachine\QueryAnalysisMachineObject.cs" />
+    <Compile Include="DbcAnalysis\KeyWordAnalysisMachine\BitTimingDefinition\BitTimingAnalysisMachine.cs" />
+    <Compile Include="DbcAnalysis\KeyWordAnalysisMachine\CommentDefinitions\CommentAnalysisMachine.cs" />
+    <Compile Include="DbcAnalysis\KeyWordAnalysisMachine\EnvironmentVariableDefinitions\EnvironmentVariableAnalysisMachine.cs" />
+    <Compile Include="DbcAnalysis\KeyWordAnalysisMachine\EnvironmentVariableDefinitions\EnvironmentVariableDataAnalysisMachine.cs" />
+    <Compile Include="DbcAnalysis\KeyWordAnalysisMachine\EnvironmentVariableDefinitions\ValueDescriptionsForEnvVarAnalysisMachine.cs" />
+    <Compile Include="DbcAnalysis\KeyWordAnalysisMachine\IAnalysisMachine.cs" />
+    <Compile Include="DbcAnalysis\KeyWordAnalysisMachine\MessageDefinitions\MessageAnalysisMachine.cs" />
+    <Compile Include="DbcAnalysis\KeyWordAnalysisMachine\MessageDefinitions\MessageTransmitterAnalysisMachine.cs" />
+    <Compile Include="DbcAnalysis\KeyWordAnalysisMachine\MessageDefinitions\SignalAnalysisMachine.cs" />
+    <Compile Include="DbcAnalysis\KeyWordAnalysisMachine\MessageDefinitions\SignalExtendedValueTypeListAnalysisMachine.cs" />
+    <Compile Include="DbcAnalysis\KeyWordAnalysisMachine\MessageDefinitions\ValueDescriptionsForSignalAanlysisMachine.cs" />
+    <Compile Include="DbcAnalysis\KeyWordAnalysisMachine\NodeDefinitions\NodeAnalysisMachine.cs" />
+    <Compile Include="DbcAnalysis\KeyWordAnalysisMachine\SignalTypeAndSignalGroupDefinitions\SignalGroupsAnalysisMachine.cs" />
+    <Compile Include="DbcAnalysis\KeyWordAnalysisMachine\SignalTypeAndSignalGroupDefinitions\SignalTypeAnalysisMachine.cs" />
+    <Compile Include="DbcAnalysis\KeyWordAnalysisMachine\SignalTypeAndSignalGroupDefinitions\SignalTypeRefAnalysisMachine.cs" />
+    <Compile Include="DbcAnalysis\KeyWordAnalysisMachine\SubKeyWordRepetitionException.cs" />
+    <Compile Include="DbcAnalysis\KeyWordAnalysisMachine\UserDefinedAttributeDefinitions\AttributeDefaultAnalysisMachine.cs" />
+    <Compile Include="DbcAnalysis\KeyWordAnalysisMachine\UserDefinedAttributeDefinitions\AttributeDefinitionAnalysisMachine.cs" />
+    <Compile Include="DbcAnalysis\KeyWordAnalysisMachine\UserDefinedAttributeDefinitions\AttributeValueForObjectAnalysisMachine.cs" />
+    <Compile Include="DbcAnalysis\KeyWordAnalysisMachine\ValueTableDefinitions\ValueTableAnalysisMachine.cs" />
+    <Compile Include="DbcAnalysis\KeyWordAnalysisMachine\VersionAndNewSymbolSpecification\NewSymbolAnalysisMachine.cs" />
+    <Compile Include="DbcAnalysis\KeyWordAnalysisMachine\VersionAndNewSymbolSpecification\VersionAnalysisMachine.cs" />
+    <Compile Include="Models\CommunicationHandle\MessageAndSignalInfo.cs" />
+    <Compile Include="Result\ResultObjectOpe.cs" />
+    <Compile Include="DbcFileAnalysis.cs" />
+    <Compile Include="FileOpen\IOpen.cs" />
+    <Compile Include="FileOpen\OpenFileByStreamReader.cs" />
+    <Compile Include="KeyWords.cs" />
+    <Compile Include="Models\DbcContent\BaseKeyModelOpe.cs" />
+    <Compile Include="Models\DbcContent\BitTimingDefinition\BitTiming.cs" />
+    <Compile Include="Models\DbcContent\CommentDefinitions\Comment.cs" />
+    <Compile Include="Models\DbcContent\EnvironmentVariableDefinitions\EnvironmentVariable.cs" />
+    <Compile Include="Models\DbcContent\EnvironmentVariableDefinitions\EnvironmentVariableData.cs" />
+    <Compile Include="Models\DbcContent\EnvironmentVariableDefinitions\ValueDescriptionsForEnvVar.cs" />
+    <Compile Include="Models\DbcContent\IBaseKeyModel.cs" />
+    <Compile Include="Models\DbcContent\MessageDefinitions\Message.cs" />
+    <Compile Include="Models\DbcContent\MessageDefinitions\MessageTransmitter.cs" />
+    <Compile Include="Models\DbcContent\MessageDefinitions\Signal.cs" />
+    <Compile Include="Models\DbcContent\MessageDefinitions\SignalExtendedValueTypeList.cs" />
+    <Compile Include="Models\DbcContent\MessageDefinitions\ValueDescriptionsForSignal.cs" />
+    <Compile Include="Models\DbcContent\NodeDefinitions\Node.cs" />
+    <Compile Include="Models\DbcContent\NullKeyWordString.cs" />
+    <Compile Include="Models\DbcContent\SignalTypeAndSignalGroupDefinitions\SignalGroups.cs" />
+    <Compile Include="Models\DbcContent\SignalTypeAndSignalGroupDefinitions\SignalType.cs" />
+    <Compile Include="Models\DbcContent\SignalTypeAndSignalGroupDefinitions\SignalTypeRef.cs" />
+    <Compile Include="Models\DbcContent\UserDefinedAttributeDefinitions\AttributeDefault.cs" />
+    <Compile Include="Models\DbcContent\UserDefinedAttributeDefinitions\AttributeDefinition.cs" />
+    <Compile Include="Models\DbcContent\UserDefinedAttributeDefinitions\AttributeValueForObject.cs" />
+    <Compile Include="Models\DbcContent\ValueTableDefinitions\ValueTable.cs" />
+    <Compile Include="Models\DbcContent\VersionAndNewSymbolSpecification\NewSymbol.cs" />
+    <Compile Include="Models\DbcContent\VersionAndNewSymbolSpecification\Version.cs" />
+    <Compile Include="Models\Result\ResultObject.cs" />
+    <Compile Include="Result\ResultObjectPool.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
