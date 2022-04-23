@@ -42,13 +42,13 @@ CommunicationDataManage类中的相关方法，将可以把Can通信报文解析
 
 在Microsoft Visual Studio开发工具界面的右侧的解决方案资源管理器中选中要引用类库文件的项目名称，如图1所示。
 
-![img](file:///C:\Users\THLR\AppData\Local\Temp\ksohtml13076\wps1.jpg) 
+![img](https://github.com/BGlirui/DBCAnalysisCS/blob/master/Resources/image1.png) 
 
 图1 解决方案资源管理器
 
 选中要引用类库文件的项目后，通过点击Microsoft Visual Studio开发工具的菜单栏中的项目->添加引用按钮后将会弹出如图2所示界面。
 
-![img](file:///C:\Users\THLR\AppData\Local\Temp\ksohtml13076\wps2.jpg) 
+![img](https://github.com/BGlirui/DBCAnalysisCS/blob/master/Resources/image2.png) 
 
 图2 引用管理器
 
